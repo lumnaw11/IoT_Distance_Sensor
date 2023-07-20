@@ -76,17 +76,12 @@ public class MainActivity extends AppCompatActivity {
                                 for (DataItem dataItem : dataItems) {
                                     double data1 = dataItem.getData1();
                                     String timestamp = dataItem.getCreate_time();
-//                                    textViewText.append("Timestamp: ").append(timestamp)
-//                                            .append(", Data1: ").append(data1)
-//                                            .append("\n");
 
                                     Log.i("DataItem", "Data1: " + data1 + ", Timestamp: " + timestamp);
                                     if (data1 > 300){
                                         txtMessage.setText(timestamp + "に荷物届いた！");
                                     }
                                 }
-                                // Set the final text from the StringBuilder to the TextView
-//                                txtData.setText(textViewText.toString());
                             }
 
                         } else {
